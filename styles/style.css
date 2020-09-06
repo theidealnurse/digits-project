@@ -2,6 +2,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -285,8 +286,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
 
 }
 
@@ -303,44 +304,43 @@ body {
 .testimonial-user {
   border: 1px solid rgba(69, 88, 128, 0.2);
   border-radius: 4px;
-  padding-top: 38px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 150px;
-  width: 372.89px;
-  height: 400px;
-  left: 210px;
-  top: 3839px;
+  padding: 38px;
+  width: 33.3%;
+}
+
+.testimonial-user:not(:last-of-type) {
+  margin-right: 20px;
 }
 
 .testimonial-words {
-  /* font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 180%;
-color: #455880; */
-font-style: normal;
+  font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 180%;
+  line-height: 22px;
   color: #455880;
-
 }
 
 .testimonial-user-info {
-  padding-top: 50px;
-  margin-left: 50px;
+  display: flex;
+  margin: 0 auto;
+  /* flex-direction: column; */
+  color: #1E266D;
+  font-style: normal;
+  font-weight: normal;
 }
 
+
+.contact-info {
+  background: #3751FF;
+}
 
 .contact-info .container {
   display: flex;
   justify-content: space-between;
-  background: #3751FF;
   width: 1600px;
   height: 323px;
   padding-bottom: 150px;
-  padding-left: 180px;
+  padding-left: 10px;
   padding-top: 100px;
 }
 
@@ -357,12 +357,13 @@ font-style: normal;
 .contact-info-right {
   display: flex;
   flex-direction: column;
-  margin-right: 210px;
+  margin-right: 10px;
 }
 
 .contact-info-button {
-  width: 245px;
+  /* width: 245px; */
   height: 56px;
+  padding: 20px 0;
   /* margin-bottom: 20px; */
   background: #FFFFFF;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
@@ -373,7 +374,6 @@ font-style: normal;
   line-height: 110%;
   text-align: center;
   color: #455880;
-
 }
 
 .contact-info-action {
@@ -383,6 +383,22 @@ font-style: normal;
   line-height: 125%;
   text-align: right;
   color: #DFE0EB;
+  margin-top: 30px;
+}
+
+.contact-button{
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.contact-button span {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.contact-info-action .color{
+  color: #f8ce12;
 }
 
 .footer-section {
@@ -430,5 +446,53 @@ font-style: normal;
 .social-media {
   display: flex;
   justify-content: space-between;
-  
 }
+
+.footer-note {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 107px;
+}
+
+.footer-note-left {
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 27px;
+color: rgba(69, 88, 128, 0.5);
+}
+
+
+/* .footer-note-right ul {
+  display: flex;
+  list-style: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: right;
+  color: #455880;
+
+} */
+
+.footer-note-right span:not(:last-of-type) {
+  margin-right: 50px;
+}
+
+.footer-note-right {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: right;
+  color: #455880;
+}
+
+
+@media screen and (max-width:768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
